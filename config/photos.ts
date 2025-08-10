@@ -9,7 +9,7 @@ const photosConfig: Record<string, ConfigPhoto> = {
         caption: 'Dědina',
         thumbnail: 'photos/dedina_thumb.jpg',
     },
-    "hrbitov": { // Hřbitov
+    "zahumny": { // Hřbitov
         src: 'photos/hrbitov.jpg',
         caption: 'Za Humny',
         thumbnail: 'photos/hrbitov_thumb.jpg',

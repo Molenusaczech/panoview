@@ -13,8 +13,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PanoView Gallery - 360° Panoramic Photo Viewer",
-  description: "Explore immersive 360° panoramic photos with interactive viewing experience",
+  title: "Ráječko z oblaků",
+  description: "360° panoramatické fotografie z Ráječka, malebné vesnice v České republice.",
+  keywords: ["Ráječko", "panoramatické fotografie", "360°", "Czech Republic"],
+  authors: [{ name: "Molenusaczech" }],
+  creator: "Molenusaczech",
+  openGraph: {
+    title: "Ráječko z oblaků",
+    description: "Prozkoumejte panoramatické fotografie z Ráječka ve 360°.",
+    url: "https://pano.mole.lol",
+    siteName: "Ráječko z oblaků",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ráječko z oblaků",
+    description: "Prozkoumejte panoramatické fotografie z Ráječka ve 360°.",
+  },
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

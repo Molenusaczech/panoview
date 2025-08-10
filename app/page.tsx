@@ -23,6 +23,7 @@ export default function Home() {
               key={key}
               href={`/${key}`}
               className="group block bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
+              prefetch={false}
             >
               <div className="relative aspect-video overflow-hidden">
                 <Image
