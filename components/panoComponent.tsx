@@ -2,12 +2,9 @@
 import { ReactPhotoSphereViewer } from "react-photo-sphere-viewer";
 import { useState, useEffect } from "react";
 import { DEFAULTS } from "@photo-sphere-viewer/core";
-import { GalleryPlugin } from '@photo-sphere-viewer/gallery-plugin';
-
 import "@photo-sphere-viewer/gallery-plugin/index.css";
 import { GyroscopePlugin } from "@photo-sphere-viewer/gyroscope-plugin";
 import { StereoPlugin } from "@photo-sphere-viewer/stereo-plugin";
-import photosConfig from "@/config/photos";
 import { translations } from "@/config/lang";
 
 export default function PanoramaComp({
@@ -17,8 +14,8 @@ export default function PanoramaComp({
     imgSrc: string,
     title: string
 }) {
-    const [loading, setLoading] = useState(true);
-    const [permissionGranted, setPermissionGranted] = useState(false);
+    const [loading, setLoading] = useState<boolean>(true);
+    const [permissionGranted, setPermissionGranted] = useState<boolean>(false);
 
     useEffect(() => {
         // Request device orientation permission for iOS 13+
