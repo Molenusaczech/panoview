@@ -9,25 +9,25 @@ const photosConfig: Record<string, ConfigPhoto> = {
         caption: 'Dědina',
         thumbnail: 'photos/dedina_thumb.jpg',
     },
-    "zahumny": { // Hřbitov
-        src: 'photos/hrbitov.jpg',
+    "zahumny": { // Za Humny
+        src: 'photos/zahumny.jpg',
         caption: 'Za Humny',
-        thumbnail: 'photos/hrbitov_thumb.jpg',
+        thumbnail: 'photos/zahumny_thumb.jpg',
     },
     "kravin": { // Kravín
-        src: 'photos/kravin.jpg',
+        src: 'photos/kravin1.jpg',
         caption: 'Kravín',
         thumbnail: 'photos/kravin_thumb.jpg',
     },
-    "hornicky": { // Pole
-        src: 'photos/pole.jpg',
+    "hornicky": { // Horničky
+        src: 'photos/hornicky.jpg',
         caption: 'Horničky',
-        thumbnail: 'photos/pole_thumb.jpg',
+        thumbnail: 'photos/hornicky_thumb.jpg',
     },
-    "splav": { // Řeka
-        src: 'photos/reka.jpg',
+    "splav": { // Splav
+        src: 'photos/splav.jpg',
         caption: 'Splav',
-        thumbnail: 'photos/reka_thumb.jpg',
+        thumbnail: 'photos/splav_thumb.jpg',
     }
 };
 export default photosConfig;
