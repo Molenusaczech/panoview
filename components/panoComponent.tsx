@@ -10,7 +10,13 @@ import { StereoPlugin } from "@photo-sphere-viewer/stereo-plugin";
 import photosConfig from "@/config/photos";
 import { translations } from "@/config/lang";
 
-export default function PanoramaComp() {
+export default function PanoramaComp({
+    imgSrc = "photos/hriste.jpg",
+    title = "Panorama Viewer"
+}: {
+    imgSrc: string,
+    title: string
+}) {
     const [loading, setLoading] = useState(true);
     const [permissionGranted, setPermissionGranted] = useState(false);
 
@@ -79,11 +85,11 @@ export default function PanoramaComp() {
                 </div>
             )}
             <ReactPhotoSphereViewer
-                src="/photos/testPhoto.jpg"
+                src={imgSrc}
                 height="100%"
                 width="100%"
                 onReady={handleReady}
-                caption="Test Panorama"
+                caption={title}
                 touchmoveTwoFingers={true}
                 navbar={[
                     /*{
@@ -113,16 +119,16 @@ export default function PanoramaComp() {
                 defaultZoomLvl={0}
                 lang={translations}
                 plugins={[
-                    GalleryPlugin.withConfig({
+                    /*GalleryPlugin.withConfig({
                         items:
-                            photosConfig.map((photo, index) => ({
-                                id: `photo-${index}`,
+                            Object.entries(photosConfig).map(([key, photo]) => ({
+                                id: key,
                                 name: photo.caption,
                                 panorama: photo.src,
                                 thumbnail: photo.thumbnail,
                             }))
                         ,
-                    }),
+                    }),*/
                     GyroscopePlugin.withConfig({
                         touchmove: true,
                         absolutePosition: true,

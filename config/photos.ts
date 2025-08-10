@@ -1,33 +1,33 @@
-const photosConfig: ConfigPhoto[] = [
-    { // Škola
+const photosConfig: Record<string, ConfigPhoto> = {
+    "skola": { // Škola
         src: 'photos/hriste.jpg',
         caption: 'Škola',
         thumbnail: 'photos/hriste_thumb.jpg',
     },
-    { // Dědina
+    "dedina": { // Dědina
         src: 'photos/dedina.jpg',
         caption: 'Dědina',
         thumbnail: 'photos/dedina_thumb.jpg',
     },
-    { // Hřbitov
+    "hrbitov": { // Hřbitov
         src: 'photos/hrbitov.jpg',
-        caption: 'Hřbitov',
+        caption: 'Za Humny',
         thumbnail: 'photos/hrbitov_thumb.jpg',
     },
-    { // Kravín
+    "kravin": { // Kravín
         src: 'photos/kravin.jpg',
         caption: 'Kravín',
         thumbnail: 'photos/kravin_thumb.jpg',
     },
-    { // Pole
+    "hornicky": { // Pole
         src: 'photos/pole.jpg',
         caption: 'Horničky',
         thumbnail: 'photos/pole_thumb.jpg',
     },
-    { // Řeka
+    "splav": { // Řeka
         src: 'photos/reka.jpg',
         caption: 'Splav',
         thumbnail: 'photos/reka_thumb.jpg',
     }
-];
+};
 export default photosConfig;
