@@ -1,7 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Permissions-Policy',
+            value: 'gyroscope=(self), accelerometer=(self), magnetometer=(self)'
+          }
+        ]
+      }
+    ];
+  }
 };
 
 export default nextConfig;
